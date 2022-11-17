@@ -1,0 +1,15 @@
+.comics-container {
+  padding-top: 20px;
+  margin-bottom: 100px;
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.comics-results {
+  /* background-color: red; */
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}

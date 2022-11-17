@@ -1,0 +1,8 @@
+.characters-container {
+  padding-top: 20px;
+  margin-bottom: 100px;
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

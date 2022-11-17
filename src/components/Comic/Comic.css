@@ -1,0 +1,29 @@
+/* .comic-container {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} */
+
+.comic-img-container {
+  /* background-color: bisque; */
+  width: 100%;
+}
+
+.comic-img {
+  height: 335px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.comic-title {
+  display: flex;
+
+  /* background-color: red; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  max-width: 220px;
+  /* height: 20px; */
+}

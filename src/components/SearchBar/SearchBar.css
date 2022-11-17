@@ -1,0 +1,31 @@
+.search-bar {
+  height: 45px;
+  /* background-color: red; */
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  height: 45px;
+  border: none;
+  width: 50%;
+  border-bottom: 2px black solid;
+  display: flex;
+  /* background-color: red; */
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+
+.search-bar input:focus {
+  outline: #e8b63d 2px solid;
+}
+
+.search-bar-search-icon {
+  font-size: 16px;
+  color: #757575;
+  margin-right: -15px;
+  z-index: 1;
+}

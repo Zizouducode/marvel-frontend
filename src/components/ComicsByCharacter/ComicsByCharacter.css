@@ -1,0 +1,18 @@
+.comics-by-character-comics-container {
+  display: flex;
+  /* background-color: lightskyblue; */
+  max-width: 900px;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  padding: 30px;
+  border-left: 1px solid black;
+  /* justify-content: center; */
+  /* gap: 20px; */
+}
+
+.comics-by-character-comic-container {
+  /* width: calc(100% / 3 -20px); */
+  width: 220px;
+  margin-right: 30px;
+  /* background-color: red; */
+}

@@ -31,8 +31,8 @@ const ComicsByCharacter = ({ data, favorites, setFavorites }) => {
           //change state isLoading to false
           setIsLoading(false);
           // console.log("response.data=>", response.data);
-          console.log("response.data=>", response.data);
-          console.log("comics.length=>", comics.comic.length);
+          // console.log("response.data=>", response.data);
+          // console.log("comics.length=>", comics.comic.length);
         }
       } catch (error) {
         console.log(error.message);

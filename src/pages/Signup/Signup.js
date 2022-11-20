@@ -36,7 +36,7 @@ const Signup = ({ handleToken }) => {
       const registerUser = async () => {
         try {
           const response = await axios.post(
-            "https://site--backend-marvel--nfqr62d7mh6n.code.run/signup",
+            "https://site--backend-marvel--nfqr62d7mh6n.code.run/user/signup",
             user
           );
           console.log(response);

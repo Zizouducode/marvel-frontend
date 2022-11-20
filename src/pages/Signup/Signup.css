@@ -49,4 +49,5 @@ form button {
   color: white;
   background-color: #e62429;
   margin-bottom: 50px;
+  cursor: pointer;
 }

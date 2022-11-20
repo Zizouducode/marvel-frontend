@@ -37,6 +37,20 @@
   font-weight: 500;
 }
 
+.character-name-icon-container {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.character-heart-icon-white {
+  color: white;
+}
+
+.character-heart-icon-red {
+  color: red;
+}
 .character-description {
   font-size: 12px;
   font-weight: 400;

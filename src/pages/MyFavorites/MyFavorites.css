@@ -1,0 +1,16 @@
+.my-favorites-h2-container {
+  height: 30px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid black;
+}
+.my-favorites-h2 {
+  margin-top: 50px;
+  /* background-color: red; */
+}
+
+.my-favorites-container {
+  display: flex;
+  gap: 30px;
+  /* background-color: lightcoral; */
+  flex-wrap: wrap;
+}

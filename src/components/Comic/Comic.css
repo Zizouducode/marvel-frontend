@@ -16,6 +16,12 @@
   object-fit: cover;
 }
 
+.comic-title-heart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .comic-title {
   display: flex;
 
@@ -26,4 +32,11 @@
   font-size: 14px;
   max-width: 220px;
   /* height: 20px; */
+}
+.comic-heart-icon-white {
+  color: black;
+}
+
+.comic-heart-icon-red {
+  color: red;
 }

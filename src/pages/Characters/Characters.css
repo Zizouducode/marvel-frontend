@@ -6,3 +6,10 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+
+.characters-results {
+  /* background-color: red; */
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}

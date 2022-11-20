@@ -1,0 +1,24 @@
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 1px solid #e62429;
+  padding: 30px;
+}
+
+.login-logo-container {
+  display: flex;
+  margin: 0 auto;
+  height: 100px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.login-logo {
+  object-fit: contain;
+}
+
+/* For the inputs and the button CSS check the Signup.css  */

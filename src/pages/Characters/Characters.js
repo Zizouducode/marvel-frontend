@@ -23,13 +23,16 @@ const Characters = ({ search, setSearch, favorites, setFavorites }) => {
     const fetchData = async () => {
       //Request to get the data from the backend
       try {
-        const response = await axios.get("http://localhost:4000/characters", {
-          params: {
-            name: search,
-            skip: skip,
-            limit: limit,
-          },
-        });
+        const response = await axios.get(
+          "https://site--backend-marvel--nfqr62d7mh6n.code.run/characters",
+          {
+            params: {
+              name: search,
+              skip: skip,
+              limit: limit,
+            },
+          }
+        );
         // console.log("search=>", search);
         if (response.data) {
           //store the response in the state Data

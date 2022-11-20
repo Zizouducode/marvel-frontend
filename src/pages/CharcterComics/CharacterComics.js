@@ -21,7 +21,7 @@ const CharacterComics = () => {
       //Request to get the data from the backend
       try {
         const response = await axios.get(
-          `http://localhost:4000/character/${id}`,
+          `https://site--backend-marvel--nfqr62d7mh6n.code.run/character/${id}`,
           {
             params: {
               characterId: id,

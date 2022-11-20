@@ -23,13 +23,16 @@ const Comics = ({ search, setSearch, favorites, setFavorites }) => {
     const fecthData = async () => {
       //Request to get the data from the backend
       try {
-        const response = await axios.get("http://localhost:4000/comics", {
-          params: {
-            title: search,
-            limit: limit,
-            skip: skip,
-          },
-        });
+        const response = await axios.get(
+          "https://site--backend-marvel--nfqr62d7mh6n.code.run/comics",
+          {
+            params: {
+              title: search,
+              limit: limit,
+              skip: skip,
+            },
+          }
+        );
         if (response.data) {
           //store the response in the state data
           setData(response.data);

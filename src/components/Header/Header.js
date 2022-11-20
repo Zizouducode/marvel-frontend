@@ -3,9 +3,10 @@ import logo from "../../assets/img/logo.webp";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-const Header = ({ token, handleToken }) => {
+const Header = ({ token, handleToken, favorites }) => {
   //State and variables
   const navigate = useNavigate();
+  const numberOfFavorites = favorites.length;
   // console.log("token=>", token);
   //Functions
   const handleLogout = (event) => {
@@ -17,10 +18,11 @@ const Header = ({ token, handleToken }) => {
   return (
     <header>
       <div className="container header-container">
-        <div className="header-logo-container">
-          <img className="header-logo" src={logo} alt="" />
-        </div>
-
+        <Link to="/">
+          <div className="header-logo-container">
+            <img className="header-logo" src={logo} alt="" />
+          </div>
+        </Link>
         <nav className="header-nav-container">
           <div className="header-menu-container">
             <Link to="/">
@@ -36,6 +38,11 @@ const Header = ({ token, handleToken }) => {
             <Link to="/myfavorites">
               <div className="header-nav-link">
                 <span>MY FAVORITES</span>
+                {numberOfFavorites > 0 ? (
+                  <div className="header-number-favorites">
+                    {numberOfFavorites}
+                  </div>
+                ) : null}
               </div>
             </Link>
           </div>

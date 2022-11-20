@@ -41,7 +41,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header token={token} handleToken={handleToken}></Header>
+        <Header
+          token={token}
+          handleToken={handleToken}
+          favorites={favorites}
+        ></Header>
         <Routes>
           <Route
             path="/"

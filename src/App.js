@@ -54,7 +54,15 @@ function App() {
               />
             }
           ></Route>
-          <Route path="/character/:id" element={<CharacterComics />} />
+          <Route
+            path="/character/:id"
+            element={
+              <CharacterComics
+                favorites={favorites}
+                setFavorites={setFavorites}
+              />
+            }
+          />
           <Route
             path="/comics"
             element={

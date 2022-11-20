@@ -35,8 +35,8 @@ const Comic = ({ comic, favorites, setFavorites }) => {
         }
       }
     }
-    let cookies = Cookies.get("favorites");
-    console.log("cookies=>", cookies);
+    // let cookies = Cookies.get("favorites");
+    // console.log("cookies=>", cookies);
   };
   // console.log("comic=>", comic);
   // if (!thumbnail.path.includes("image_not_available")) {

@@ -5,7 +5,7 @@ import Character from "../../components/Character/Character";
 import "./CharacterComics.css";
 import ComicsByCharacter from "../../components/ComicsByCharacter/ComicsByCharacter";
 
-const CharacterComics = () => {
+const CharacterComics = ({ favorites, setFavorites }) => {
   //Get the id of the character from the params
   const { id } = useParams();
 
@@ -48,12 +48,20 @@ const CharacterComics = () => {
         <p>waiting for data</p>
       ) : (
         <div className=" container character-comics-container">
-          <Character character={data} />
+          <Character
+            character={data}
+            favorites={favorites}
+            setFavorites={setFavorites}
+          />
           <div>
             <h2 className="character-comics-h2">
               Find <span>{data.name}</span> in :
             </h2>
-            <ComicsByCharacter data={data} />
+            <ComicsByCharacter
+              data={data}
+              favorites={favorites}
+              setFavorites={setFavorites}
+            />
           </div>
         </div>
       )}

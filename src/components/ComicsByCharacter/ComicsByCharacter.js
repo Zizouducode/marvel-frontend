@@ -4,7 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Comic from "../Comic/Comic";
 
-const ComicsByCharacter = ({ data }) => {
+const ComicsByCharacter = ({ data, favorites, setFavorites }) => {
   //   console.log("data=>", data);
   const { _id } = data;
   //   console.log("_id=>", _id);
@@ -12,12 +12,13 @@ const ComicsByCharacter = ({ data }) => {
   const [comics, setComics] = useState();
   //State to notify when the data is reiceved
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const fetchData = async () => {
       //For to make the number of request based on the number of comics
       try {
         const response = await axios.get(
-          `http://localhost:4000/comics/${_id}`,
+          `https://site--backend-marvel--nfqr62d7mh6n.code.run/comics/${_id}`,
           {
             params: {
               characterId: _id,
@@ -30,7 +31,8 @@ const ComicsByCharacter = ({ data }) => {
           //change state isLoading to false
           setIsLoading(false);
           // console.log("response.data=>", response.data);
-          // console.log("comi.length=>", comics.comics.length);
+          console.log("response.data=>", response.data);
+          console.log("comics.length=>", comics.comic.length);
         }
       } catch (error) {
         console.log(error.message);
@@ -52,7 +54,11 @@ const ComicsByCharacter = ({ data }) => {
                   key={index}
                   className="comics-by-character-comic-container"
                 >
-                  <Comic comic={comic} />
+                  <Comic
+                    comic={comic}
+                    favorites={favorites}
+                    setFavorites={setFavorites}
+                  />
                 </div>
               );
             } else return null;

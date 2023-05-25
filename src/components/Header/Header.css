@@ -71,6 +71,9 @@ header {
   display: flex;
   gap: 30px;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    padding-top: 10px;
+  }
 }
 .header-button-signup {
   background-color: #e62429;

@@ -4,6 +4,9 @@
   margin-top: 20px;
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .search-bar input {
@@ -17,6 +20,10 @@
   font-size: 16px;
   letter-spacing: 2px;
   padding-left: 30px;
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .search-bar input:focus {
@@ -28,4 +35,8 @@
   color: #757575;
   margin-right: -15px;
   z-index: 1;
+  @media only screen and (max-width: 600px) {
+    margin-left: 30px;
+    margin-right: -70px;
+  }
 }

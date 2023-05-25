@@ -1,15 +1,21 @@
 .comics-container {
   padding-top: 20px;
   margin-bottom: 100px;
-  /* background-color: aliceblue; */
+
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  @media only screen and (max-width: 600px) {
+    width: calc(100% / 2);
+    margin: 0 auto;
+  }
 }
 
 .comics-results {
-  /* background-color: red; */
   margin-top: 20px;
   font-size: 12px;
   letter-spacing: 1px;
+  @media only screen and (max-width: 600px) {
+    margin-left: 25px;
+  }
 }
